@@ -1,0 +1,9 @@
+record(event, "event0") {
+    field(DTYP, "Soft Channel")
+    field(INP, "1")
+}
+record(ao, "ao0") {
+    field(SCAN,"Event")
+    field(EVNT, "1")
+}
+

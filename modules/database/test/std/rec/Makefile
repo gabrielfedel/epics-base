@@ -77,6 +77,13 @@ testHarness_SRCS += softTest.c
 TESTFILES += ../softTest.db
 TESTS += softTest
 
+TESTPROD_HOST += eventTest
+eventTest_SRCS += eventTest.c
+eventTest_SRCS += recTestIoc_registerRecordDeviceDriver.cpp
+testHarness_SRCS += eventTest.c
+TESTFILES += ../eventTest.db
+TESTS += eventTest
+
 TARGETS += $(COMMON_DIR)/asTestIoc.dbd
 DBDDEPENDS_FILES += asTestIoc.dbd$(DEP)
 asTestIoc_DBD += base.dbd
